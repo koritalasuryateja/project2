@@ -80,8 +80,34 @@ unlock - Use a key to unlock a locked location and proceed.
 Certain locations have conditions for winning or losing the game. Winning conditions may involve having a specific item in the player's inventory, while losing conditions could be triggered by specific events or lack of necessary items.
 
 **Usage:**
+```
+"locations": {
+    "0": {
+        "name": "End",
+        "desc": "Congratulations! You've reached the end of the game.",
+        "items": [],
+        "exits": {},
+        "conditions": {
+            "win": {"item": "treasure", "message": "You found the treasure! You win the game!"},
+            "lose": {"message": "Oh no! You failed to find the treasure. Game over."}
+        }
+    },
+    // ... other locations ...
+}
+
+```
 ```plaintext
+> End
+
+Congratulations! You've reached the end of the game.
+
+What would you like to do? get treasure
+You pick up the treasure.
+
 Conditions are checked after each action, affecting the outcome of the game.
+
+Congratulations! You found the treasure! You win the game!
+
 ```
 
 
