@@ -43,19 +43,7 @@ This project is designed to implement a text search and retrieval system that pr
      - NLTK library for tokenization, stopword removal, and lemmatization.
 
 ### 2. **TF-IDF Scoring**
-   - **Term Frequency (TF)**:
-     \[
-     TF(word) = \frac{\text{Number of occurrences of the word in a document}}{\text{Total number of words in the document}}
-     \]
-   - **Inverse Document Frequency (IDF)**:
-     \[
-     IDF(word) = \log\left(\frac{\text{Total number of documents}}{\text{Number of documents containing the word}}\right) + 1
-     \]
-   - **TF-IDF**:
-     \[
-     TF-IDF(word) = TF(word) \times IDF(word)
-     \]
-
+   -
    **Purpose**:
    - Ranks words higher if they are frequent in a document but rare across all documents.
 
