@@ -43,7 +43,6 @@ This project is designed to implement a text search and retrieval system that pr
      - NLTK library for tokenization, stopword removal, and lemmatization.
 
 ### 2. **TF-IDF Scoring**
-   -
    **Purpose**:
    - Ranks words higher if they are frequent in a document but rare across all documents.
 
